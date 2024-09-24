@@ -17,7 +17,7 @@ const app = express()
 const httpServer = createServer(app)
 const io = new Server(httpServer, {
 	cors: {
-		origin: 'https://raycheva3.netlify.app',
+		origin: '*',
 	},
 	methods: ['GET', 'POST'],
 })
